@@ -1,0 +1,14 @@
+{
+    // "preset" is a collection of code transfrom plug-ins, which are like the
+    //pieces of code that actually apply the actuall transformation to out code.
+    "presets" : [                    
+        ["env", {                        // this is a package already installed("babel-preset-env")
+            "targets": {
+                "browser": [
+                    "last 5 versions",   // last 5 versions of all the browsers
+                    "ie >= 8"            // Internet Explorer greater or equal to version 8
+                ]
+            }
+        }]       
+    ]
+}
